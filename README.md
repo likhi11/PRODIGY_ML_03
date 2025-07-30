@@ -1,32 +1,16 @@
+# Task-03: Cat vs Dog Image Classification using SVM
 
-# Task-03: Dogs vs Cats Image Classification using SVM
+## Objective:
+Implement a Support Vector Machine (SVM) classifier to distinguish between images of cats and dogs using the Kaggle dataset.
 
-## Dataset
-Download from: https://www.kaggle.com/c/dogs-vs-cats/data
-Extract the dataset such that you have folders:
-```
-data/
-  cats/
-    cat.0.jpg
-    ...
-  dogs/
-    dog.0.jpg
-    ...
-```
+## Dataset:
+[Dogs vs Cats - Kaggle](https://www.kaggle.com/c/dogs-vs-cats/data)
 
-## Setup
-```bash
-pip install numpy matplotlib scikit-learn tensorflow joblib
-```
+## Instructions:
+1. Download the dataset from Kaggle and extract the `train` folder.
+2. Place the `train` folder inside a `dataset` directory in the same folder as the script.
+3. Run `svm_dog_vs_cat.py` to train and evaluate the SVM model.
 
-## Run
-```bash
-python svm_dog_vs_cat.py
-```
-This script:
-- Loads images from the dataset (1000 cats and 1000 dogs)
-- Preprocesses and flattens them
-- Uses PCA for dimensionality reduction
-- Trains an SVM classifier
-- Evaluates and saves the model
-- Visualizes predictions
+## Note:
+- The model uses grayscale images resized to 64x64.
+- It uses a linear kernel for classification.
